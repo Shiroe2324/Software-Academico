@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/forum.css" />
+    <title>Mensajería</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-light sidebar" style="background-color: #003366">
+          <div class="sidebar-logo">
+            <img src="../assets/3 sin fondo.png" alt="Logo" style="width: 100px" />
+          </div>
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="true">Mensajes</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Configuración</button>
+          </div>
+        </div>
+        <!-- Content Area -->
+        <div class="col-md-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="d-flex justify-content-between align-items-center">
+                <h1 style="color: #003366" class="h1">
+                  <strong>Tablero virtual</strong>
+                </h1>
+                <div class="col-md-1" style="margin: 10px">
+                  <div class="col-sm-5">Cargo</div>
+                  <div class="col-sm-7">Estudiante</div>
+                </div>
+              </div>
+              <hr class="linea-horizontal" />
+              <div class="row">
+                <div class="col-md-6" style="position: relative">
+                  <div class="d-flex align-items-center mb-3">
+                    <div style="margin-right: 10px">
+                      <img src="../assets/logoMensaje.svg" alt="Image" style="width: 100px; height: 100px; border-radius: 100%" />
+                    </div>
+                    <div style="margin-left: 20px">
+                      <h3 style="font-weight: bold">MENSAJES</h3>
+                    </div>
+                  </div>
+                  <div class="content-left">
+                    <table class="table table-bordered" style="border-width: 2px">
+                      <thead>
+                        <tr>
+                          <th colspan="3" style="background-color: #66ccff">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <!-- SVG icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                  <path
+                                    d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="col-10">
+                                <!-- Text centered -->
+                                <h5 style="font-weight: bold; color: #1069c2; text-align: center">MENSAJES PREDETERMINADOS</h5>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Categorías</td>
+                          <td>Editar Mensaje</td>
+                          <td>Elegir Destinatario</td>
+                        </tr>
+                        <tr>
+                          <td>Agradecimientos</td>
+                          <td>[Gracias por tu evaluación]</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Solicitudes</td>
+                          <td>[Podrías aclarar más este punto]</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Confirmaciones</td>
+                          <td>[He recibido tus comentarios]</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Respuesta estándar</td>
+                          <td>[El proyecto está en revisión]</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button class="btn btn-primary" style="background: linear-gradient(to right, #66ccff, #003366); color: white; border-radius: 20px; padding: 10px 20px; display: block; margin: 0 auto">GUARDAR CAMBIOS</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center mb-3">
+                    <div style="margin-right: 10px">
+                      <img src="../assets/retoalimentacion.svg" alt="Image" style="width: 100px; height: 100px; border-radius: 100%" />
+                    </div>
+                    <div style="margin-left: 20px">
+                      <h3 style="font-weight: bold">RETROALIMENTACIÓN</h3>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <table class="table table-bordered" style="margin-bottom: 50px; border-width: 2px">
+                          <thead>
+                            <tr>
+                              <th colspan="2" style="background-color: #66ccff">
+                                <h5 style="font-weight: bold; color: #1069c2; text-align: center">FORMULARIO DE EVALUACIÓN</h5>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Nombre del evaluador:</td>
+                              <td>
+                                <input type="text" class="form-control" id="evaluador" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Fecha de evaluación:</td>
+                              <td>
+                                <input type="date" class="form-control" id="fecha-evaluacion" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Observaciones:</td>
+                              <td>
+                                <textarea class="form-control" id="observaciones" rows="3"></textarea>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-6">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th colspan="2" style="background-color: #66ccff">
+                                <h5 style="font-weight: bold; color: #1069c2; text-align: center">CRITERIOS DE EVALUACIÓN</h5>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Originalidad:</td>
+                              <td>
+                                <textarea class="form-control" id="originalidad" rows="2"></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Calidad Técnica:</td>
+                              <td>
+                                <textarea class="form-control" id="calidad-tecnica" rows="2"></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Viabilidad:</td>
+                              <td>
+                                <textarea class="form-control" id="viabilidad" rows="2"></textarea>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #66ccff, #003366); color: white; border-radius: 20px; padding: 10px 20px; display: block; margin: 0 auto">REGISTRAR EVALUACIÓN</button>
+                    </div>
+                  </form>
+                  <div class="container mt-4">
+                    <!-- Tablas para evaluaciones y comentarios -->
+                    <div class="row">
+                      <div class="col-md-8">
+                        <table class="table table-bordered">
+                          <thead class="bg-primary text-white">
+                            <tr>
+                              <th colspan="4" style="font-weight: bold; color: #1069c2; text-align: center; background-color: #66ccff">LISTA DE EVALUACIONES</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Evaluador</td>
+                              <td>Fecha de evaluación</td>
+                              <td>Observaciones</td>
+                              <td>Ver detalles</td>
+                            </tr>
+                            <!-- Ejemplo de fila -->
+                            <tr>
+                              <td style="height: 80px"></td>
+                              <td style="height: 80px"></td>
+                              <td style="height: 80px"></td>
+                              <td style="height: 80px"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-3">
+                        <table class="table table-bordered" style="margin-left: 15px; margin-right: 15px">
+                          <thead>
+                            <tr>
+                              <th style="font-weight: bold; color: #1069c2; text-align: center; background-color: #66ccff">Comentarios de Evaluadores</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="height: 100px"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <h3>Configuración</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/calendar.css" />
+    <link href="../assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="../assets/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="../assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <div class="drawer lg:drawer-open">
+      <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+
+      <main class="drawer-content mx-5">
+        <header class="flex items-center justify-between">
+          <h1 class="text-5xl font-bold text-blue-900">Calendario</h1>
+          <div>
+            <h2 class="text-3xl font-bold text-blue-900">Cargo</h2>
+            <h3 class="text-xl text-blue-900">Estudiante</h3>
+          </div>
+        </header>
+
+        <hr class="divider h-1 bg-blue-900" />
+        <h2 class="my-2 text-2xl font-bold">Cronograma</h2>
+
+        <section class="grid grid-cols-12 gap-10">
+          <div class="col-span-full overflow-x-auto lg:col-span-6">
+            <table class="table">
+              <thead class="bg-blue-900 text-white">
+                <tr>
+                  <th>Descripción</th>
+                  <th>Fecha</th>
+                  <th>Hora</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover">
+                  <td>Reunión de equipo</td>
+                  <td>2021-10-01</td>
+                  <td>10:00</td>
+                </tr>
+                <tr class="hover">
+                  <td>Entrega de proyecto</td>
+                  <td>2021-10-15</td>
+                  <td>12:00</td>
+                </tr>
+                <tr class="hover">
+                  <td>Reunión de equipo</td>
+                  <td>2021-10-29</td>
+                  <td>10:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-span-full overflow-x-auto lg:col-span-6">
+            <table class="table">
+              <thead class="bg-blue-900 text-white">
+                <tr>
+                  <th>Descripción</th>
+                  <th>Fecha Vencimiento</th>
+                  <th>Estado</th>
+                  <th>Prioridad</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover">
+                  <td>Entrega de proyecto</td>
+                  <td>2021-10-15</td>
+                  <td>En proceso</td>
+                  <td>Alta</td>
+                  <td class="flex gap-1">
+                    <button class="btn btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn btn-sm"><i class="fa-solid fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr class="hover">
+                  <td>Reunión de equipo</td>
+                  <td>2021-10-29</td>
+                  <td>En proceso</td>
+                  <td>Alta</td>
+                  <td class="flex gap-1">
+                    <button class="btn btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn btn-sm"><i class="fa-solid fa-trash"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-span-full overflow-x-auto">
+            <h3 class="bg-blue-900 text-center text-2xl font-bold text-white">Octubre 2024</h3>
+            <table class="table">
+              <thead class="bg-blue-900 text-white">
+                <tr>
+                  <th>Domingo</th>
+                  <th>Lunes</th>
+                  <th>Martes</th>
+                  <th>Miércoles</th>
+                  <th>Jueves</th>
+                  <th>Viernes</th>
+                  <th>Sábado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-gray-300"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td class="bg-gray-300">2</td>
+                </tr>
+                <tr>
+                  <td class="bg-gray-300">3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td class="bg-gray-300">9</td>
+                </tr>
+                <tr>
+                  <td class="bg-gray-300">10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td class="bg-gray-300">16</td>
+                </tr>
+                <tr>
+                  <td class="bg-gray-300">17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td class="bg-gray-300">23</td>
+                </tr>
+                <tr>
+                  <td class="bg-gray-300">24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td class="bg-gray-300">30</td>
+                </tr>
+                <tr>
+                  <td class="bg-gray-300">31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="bg-gray-300"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <div class="drawer-side">
+        <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu min-h-full bg-blue-950 p-4 text-white">
+          <li><a class="text-xl">Nombre</a></li>
+          <li><a href="dashboard.html">Tablero Virtual</a></li>
+          <li><a class="active">Calendario</a></li>
+          <li><a href="project.html">Proyecto</a></li>
+          <li><a href="forum.html">Mensajería</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  min-height: 100vh;
+}
+
+.sidebar-logo {
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-content {
+  margin-left: 20px;
+}
+
+.linea-vertical {
+  border-left: 2px solid black;
+  height: 100%; /* Esto hará que la línea tome la altura total de la fila */
+  margin: 0 20px; /* Espacio entre las tarjetas y la línea */
+}
+
+.h1 {
+  line-height: 80px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px; /* Más separado de la parte superior */
+  margin-bottom: 0; /* Más pegado al hr de la parte inferior */
+}
+
+.h3 {
+  font-weight: bold;
+}
+
+.linea-horizontal {
+  border-top: 4px solid #003366;
+}
+
+.btn-notificaciones {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/* Estilos para la tabla */
+.table td {
+  border: 1px solid #66ccff; /* Color de las líneas de división de la tabla */
+  font-weight: bold; /* Texto en negrilla */
+  vertical-align: middle; /* Asegura que el contenido de la celda esté centrado verticalmente */
+  padding: 8px; /* Reducir el padding dentro de las celdas */
+}
+
+.table th {
+  text-align: center; /* Alineación del texto al centro */
+  font-weight: bold; /* Texto en negrilla */
+  padding: 8px; /* Reducir el padding dentro de las celdas */
+}
+
+.card-header {
+  background-color: #66ccff;
+  text-align: center;
+}
+
+.table {
+  background-color: #f8f9fa;
+  margin-bottom: 5px; /* Reducir el espacio entre tablas */
+  border-collapse: collapse; /* Alineación de las celdas para que no haya líneas horizontales */
+  border-width: 5px; /* Aumenta el grosor de las líneas de la tabla */
+}
+
+.form-control,
+.form-control:focus {
+  border-color: #66ccff;
+  box-shadow: none;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #003366;
+}

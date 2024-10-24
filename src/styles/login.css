@@ -1,0 +1,206 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fondo con Imágenes */
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1; /* Para enviar las imágenes al fondo */
+}
+
+.background-images img {
+  width: 33.33%;
+  max-width: 100%; /* Asegura que la imagen sea fluida */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+/* Overlay del Formulario */
+.form,
+.form-Register {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 280px; /* Cambiar ancho según necesidad */
+  text-align: center;
+}
+
+.form-Register {
+  width: 400px; /* Ancho más grande para el formulario de registro */
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos específicos para los campos de entrada en cada formulario */
+.login-form input,
+.forgot-password-form input {
+  width: 100%; /* Todo el ancho */
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.register-form input,
+.register-form select {
+  width: calc(100% - 20px); /* 100% menos un margen */
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.register-form .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-form .form-left,
+.register-form .form-right {
+  width: 48%; /* Mantener el 48% para que quepan dos en línea */
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Separación entre botones */
+button,
+.back-link {
+  padding: 10px;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Espaciado inferior entre botones */
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.back-link:hover {
+  background-color: #003399; /* Oscurecer el color en hover */
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  margin: 0 5px; /* Espaciado entre los enlaces */
+  text-decoration: underline; /* Restaurar subrayado en enlaces */
+  background-color: transparent; /* Eliminar color de fondo en enlaces */
+  color: #0044cc; /* Color de texto original */
+}
+
+/* Footer */
+footer {
+  background-color: #0044cc;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+
+/* Logo en la esquina inferior izquierda */
+.footer-logo {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Contenedor del Texto al Lado del Logo */
+.footer-text {
+  position: absolute;
+  left: 160px; /* Para colocarlo al lado del logo */
+  bottom: 40px;
+  color: white;
+  text-align: left;
+  line-height: 1.2;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .form,
+  .form-Register {
+    width: 90%; /* Hacer que los formularios ocupen más espacio en pantallas pequeñas */
+    right: 5%;
+    padding: 20px;
+  }
+
+  .register-form .form-left,
+  .register-form .form-right {
+    width: 100%; /* Hacer los campos de registro a pantalla completa */
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    flex-direction: column; /* Apilar los campos uno debajo del otro */
+  }
+
+  /* Responsivo para el Footer */
+  footer {
+    height: auto; /* Ajustar la altura para que no ocupe demasiado espacio en pantallas pequeñas */
+    padding: 20px; /* Añadir más espacio alrededor */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    position: static;
+    width: 100px; /* Reducir el tamaño del logo en pantallas pequeñas */
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    position: static;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
